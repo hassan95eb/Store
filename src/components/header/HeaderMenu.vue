@@ -1,62 +1,26 @@
 <template>
-   <nav
-      aria-label="Global"
-      class="hidden md:block"
-   >
-      <ul class="flex items-center gap-6 text-sm">
-         <li>
-            <a
-               class="text-gray-500 transition hover:text-gray-500/75"
-               href="#"
-            >
-               About
-            </a>
-         </li>
-
-         <li>
-            <a
-               class="text-gray-500 transition hover:text-gray-500/75"
-               href="#"
-            >
-               Careers
-            </a>
-         </li>
-
-         <li>
-            <a
-               class="text-gray-500 transition hover:text-gray-500/75"
-               href="#"
-            >
-               History
-            </a>
-         </li>
-
-         <li>
-            <a
-               class="text-gray-500 transition hover:text-gray-500/75"
-               href="#"
-            >
-               Services
-            </a>
-         </li>
-
-         <li>
-            <a
-               class="text-gray-500 transition hover:text-gray-500/75"
-               href="#"
-            >
-               Projects
-            </a>
-         </li>
-
-         <li>
-            <a
-               class="text-gray-500 transition hover:text-gray-500/75"
-               href="#"
-            >
-               Blog
-            </a>
-         </li>
-      </ul>
-   </nav>
+  <nav aria-label="Global" class="hidden md:block">
+    <ul class="flex items-center gap-6 text-sm">
+      <li>
+        <RouterLink
+          class="text-white transition hover:text-cyan-600"
+          to="/"
+          active-class="custom-active-menu-link"
+        >
+          Home
+        </RouterLink>
+      </li>
+      <li>
+        <RouterLink class="text-white transition hover:text-cyan-600" to="/products">
+          Products
+        </RouterLink>
+      </li>
+    </ul>
+  </nav>
 </template>
+<style scoped>
+.router-link-exact-active {
+  font-weight: 600;
+  color: #009689;
+}
+</style>
